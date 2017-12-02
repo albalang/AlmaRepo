@@ -1,21 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.projekalma" name="[COLOR cornflowerblue]Projek Alma[/COLOR]" version="1.0.0" provider-name="Alma">
-	<extension point="xbmc.addon.repository" name="Projek Alma Repo">
-		<info compressed="false">https://github.com/albalang/AlmaRepo/new/master/ProjekAlma/plugins/addons.xml</info>
-		<checksum>https://github.com/albalang/AlmaRepo/new/master/ProjekAlma/plugins/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/albalang/AlmaRepo/new/master/ProjekAlma/plugins</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Projek Alma Repo - Rumah Nusantara</summary>
-		<description>Projek Alma Repo - Rumah Nusantara</description>
-		<platform>all</platform>
-		<assets>
-            <icon>icon.jpg</icon>
-            <fanart></fanart>
-            <screenshot></screenshot>
-        </assets>
-	</extension>
-</addon>
 <addon id="plugin.video.almatube"
 version="0.0.1"
 name="AlmaTube"
@@ -37,10 +21,26 @@ provider-name="Alma">
     <fanart>fanart.jpg</fanart>
     <screenshot>resources\screenshot-01.jpg</screenshot>
     <screenshot>resources\screenshot-02.jpg</screenshot>
-    <screenshot>resources\screenshot-03.jpg</screenshot>    
+    <screenshot>resources\screenshot-03.jpg</screenshot>
   </assets>
   <news>Initial release. Beta testing</news>
 </extension>
 </addon>
-	
+
+    <addon id="repository.projekalma" name="Projek Alma" version="1.0.0" provider-name="Alma">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Projek Alma">
+            <info compressed="false">https://github.com/albalang/AlmaRepo/tree/master/ProjekAlma/plugins/addons.xml</info>
+            <checksum>https://github.com/albalang/AlmaRepo/tree/master/ProjekAlma/plugins/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/albalang/AlmaRepo/tree/master/ProjekAlma/plugins/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Projek Alma Repo - Rumah Nusantara</summary>
+            <description>Himpunan segala macam addon cap ayam. Kepuasan pasti tak terjamin.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
 </addons>
