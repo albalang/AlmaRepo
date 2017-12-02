@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
 <addon id="repository.projekalma" name="[COLOR cornflowerblue]Projek Alma[/COLOR]" version="1.0.0" provider-name="Alma">
 	<extension point="xbmc.addon.repository" name="Projek Alma Repo">
 		<info compressed="false">https://github.com/albalang/AlmaRepo/new/master/ProjekAlma/plugins/addons.xml</info>
@@ -16,4 +16,31 @@
         </assets>
 	</extension>
 </addon>
-
+<addon id="plugin.video.almatube"
+version="0.0.1"
+name="AlmaTube"
+provider-name="Alma">
+<requires>
+  <import addon="xbmc.python" version="2.24.0"/>
+  <import addon="script.module.addon.common" version="2.0.0"/>
+  <import addon="plugin.video.youtube" version="5.0.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="default.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">AlmaTube - Simple Channel</summary>
+  <description lang="en">Koleksi video direka khas untuk streamers dari Malaysia. Addon ini masih di peringkat beta testing.</description>
+  <disclaimer lang="en">Video source is taken directly from Youtube</disclaimer>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources\screenshot-01.jpg</screenshot>
+    <screenshot>resources\screenshot-02.jpg</screenshot>
+    <screenshot>resources\screenshot-03.jpg</screenshot>    
+  </assets>
+  <news>Initial release. Beta testing</news>
+</extension>
+</addon>
+	
+</addons>
