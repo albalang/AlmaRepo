@@ -32,9 +32,9 @@ provider-name="Alma">
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="Projek Alma">
-            <info compressed="false">https://github.com/albalang/AlmaRepo/tree/master/ProjekAlma/plugins/addons.xml</info>
-            <checksum>https://github.com/albalang/AlmaRepo/tree/master/ProjekAlma/plugins/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/albalang/AlmaRepo/tree/master/ProjekAlma/plugins/</datadir>
+            <info compressed="false">https://github.com/albalang/AlmaRepo/tree/master/ProjekAlma/_plugins/addons.xml</info>
+            <checksum>https://github.com/albalang/AlmaRepo/tree/master/ProjekAlma/_plugins/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/albalang/AlmaRepo/tree/master/ProjekAlma/_plugins/</datadir>
             <hashes>false</hashes>
         </extension>
         <extension point="xbmc.addon.metadata">
